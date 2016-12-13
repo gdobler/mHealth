@@ -1,2 +1,2 @@
 # mHealth
-Detection of cigarette signage in street-level imaging
+Detection of tobacco signage in street-level imaging
