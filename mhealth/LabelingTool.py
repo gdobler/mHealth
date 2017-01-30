@@ -322,9 +322,9 @@ for ids in data.head(500)['id']:
     a.xmin, a.xmax, a.ymin, a.ymax = ax.get_xlim()[0], ax.get_xlim()[1], ax.get_ylim()[1], ax.get_ylim()[0]
     plt.show()
 
-if os.path.isfile("./pic_1_500_location.csv"):
-    df = pd.read_csv("./pic_1_500_location.csv",header=None)
-    df.rename(columns={1:"ID", 8:"zone1", 9:"zone2", 10:"zone3", 11:"zone4"}, inplace=True)
-    df = df.loc[:,["ID","zone1","zone2","zone3","zone4"]]
-    df.drop_duplicates(subset=['ID'], keep='last', inplace=True)
-    df.to_csv("pic_1_500_location.csv")
+# if os.path.isfile("./pic_1_500_location.csv"):
+#     df = pd.read_csv("./pic_1_500_location.csv",header=None)
+#     df.rename(columns={1:"ID", 8:"zone1", 9:"zone2", 10:"zone3", 11:"zone4"}, inplace=True)
+#     df = df.loc[:,["ID","zone1","zone2","zone3","zone4"]]
+#     df.drop_duplicates(subset=['ID'], keep='last', inplace=True)
+#     df.to_csv("pic_1_500_location.csv")
